@@ -5,6 +5,24 @@
 
 	<!--Required metatag and stylesheet-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	 /*Large screen styles first - Avoid*/
+.product-img {
+  width: 50%;
+  float: left;
+}
+@media screen and (max-width: 40.5em) {
+  .product-img {
+    width: auto;
+    float: none;
+  }
+}
+/* mobile first approach */
+@media screen and (min-width: 40.5em) {
+  .product-img {
+    width: 50%;
+    float: left;
+  }
+}
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 
